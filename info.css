@@ -1,0 +1,251 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #ECE9E6, #FFFFFF);
+}
+
+nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #009688; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    text-decoration: none;
+    color: #fff; 
+    font-weight: 700;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 5px 15px;
+    color: #fff; /* Cambio de color de letra */
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+nav ul li a.active {
+    background: #000; /* Cambio de color de fondo */
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background: #009688;
+    color: #fff;
+}
+
+
+.articles {
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+#arone {
+    flex: 1; 
+    text-align: justify;
+    font-size: 18px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.aside {
+    flex-basis: 30%; 
+    text-align: justify;
+    font-size: 18px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    color: #C2185B;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+#btnReservar {
+    background: #512DA8;
+    padding: 8px;
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+    letter-spacing: 2px;
+    cursor: pointer; 
+}
+
+table {
+    font-size: 16px;
+    width: 100%;
+}
+
+tr {
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+}
+
+.column {
+    background: #03A9F4;
+}
+
+.fields {
+    background: #B2EBF2;
+}
+
+#ubicacion {
+    text-decoration: none;
+}
+
+footer {
+    margin: 40px;
+    padding: 5px;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+}
+
+#footerbg {
+    background: #00796B;
+}
+.btn-wsp{
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 63px;
+    bottom:25px;
+    right:25px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+}
+.btn-wsp:hover{
+    background: #20ba5a;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+    .btn-wsp{
+        width:63px;
+        height:63px;
+        line-height: 66px;
+	}
+}
+.btn-wsp:hover{
+    background: #20ba5a;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+    .btn-wsp{
+        width:63px;
+        height:63px;
+        line-height: 66px;
+	}}
+
+    .btn-goo{
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        line-height: 63px;
+        bottom: 25px; /* Cambia la posición vertical */
+        left: 25px; /* Cambia la posición horizontal */
+        background: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 35px;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+        z-index: 100;
+        transition: all 300ms ease;
+    }
+    
+    .btn-goo:hover {
+        background: #20ba5a;
+    }
+    
+    @media only screen and (min-width: 320px) and (max-width: 768px) {
+        .btn-wsp {
+            width: 63px;
+            height: 63px;
+            line-height: 66px;
+        }
+    }
+    .btn-wsp:hover{
+        background: #20ba5a;
+    }
+    @media only screen and (min-width:320px) and (max-width:768px){
+        .btn-wsp{
+            width:63px;
+            height:63px;
+            line-height: 66px;
+        }}
+    
+        .btn-goo{
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            line-height: 63px;
+            bottom: 25px; /* Cambia la posición vertical */
+            left: 25px; /* Cambia la posición horizontal */
+            background: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 35px;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+            z-index: 100;
+            transition: all 300ms ease;
+        }
+        
+        .btn-goo:hover {
+            background: #20ba5a;
+        }
+        
+        @media only screen and (min-width: 320px) and (max-width: 768px) {
+            .btn-wsp {
+                width: 63px;
+                height: 63px;
+                line-height: 66px;
+            }
+        }
+        

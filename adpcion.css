@@ -1,0 +1,223 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #009688;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    background-color: #009688;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    color: #55b8a2;
+}
+
+
+.formulario {
+    text-align: center;
+    padding: 20px;
+}
+
+.formulario h2 {
+    color: #009688;
+}
+
+select {
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+.info-mascotas {
+    text-align: center;
+    padding: 20px;
+}
+
+.info-mascotas h2 {
+    color: #009688;
+}
+
+
+.categoria {
+    display: none;
+}
+
+.categoria.active {
+    display: block;
+}
+
+
+.mascota {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    margin: 0 10px 20px 0; /* Margen a la derecha y abajo de cada mascota */
+    max-width: 300px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    position: relative;
+    left: 20px;
+}
+
+.mascota img {
+    max-width: 100%;
+}
+
+
+.mascota .info {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    transform: scale(0);
+    transform-origin: top;
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.mascota:hover .info {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+.categoria .mascota {
+    display: block;
+}
+.btn-wsp{
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 63px;
+    bottom:25px;
+    right:25px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+}
+.btn-wsp:hover{
+    background: #20ba5a;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+    .btn-wsp{
+        width:63px;
+        height:63px;
+        line-height: 66px;
+	}
+}
+.btn-wsp:hover{
+    background: #20ba5a;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+    .btn-wsp{
+        width:63px;
+        height:63px;
+        line-height: 66px;
+	}}
+
+    .btn-goo{
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        line-height: 63px;
+        bottom: 25px; /* Cambia la posición vertical */
+        left: 25px; /* Cambia la posición horizontal */
+        background: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 35px;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+        z-index: 100;
+        transition: all 300ms ease;
+    }
+    
+    .btn-goo:hover {
+        background: #20ba5a;
+    }
+    
+    @media only screen and (min-width: 320px) and (max-width: 768px) {
+        .btn-wsp {
+            width: 63px;
+            height: 63px;
+            line-height: 66px;
+        }
+    }
+    .btn-wsp:hover{
+        background: #20ba5a;
+    }
+    @media only screen and (min-width:320px) and (max-width:768px){
+        .btn-wsp{
+            width:63px;
+            height:63px;
+            line-height: 66px;
+        }}
+    
+        .btn-goo{
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            line-height: 63px;
+            bottom: 25px; /* Cambia la posición vertical */
+            left: 25px; /* Cambia la posición horizontal */
+            background: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 35px;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+            z-index: 100;
+            transition: all 300ms ease;
+        }
+        
+        .btn-goo:hover {
+            background: #20ba5a;
+        }
+        
+        @media only screen and (min-width: 320px) and (max-width: 768px) {
+            .btn-wsp {
+                width: 63px;
+                height: 63px;
+                line-height: 66px;
+            }
+        }
+        

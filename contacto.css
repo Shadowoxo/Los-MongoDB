@@ -1,0 +1,248 @@
+/* Importar la fuente Poppins desde Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+/* Estilos globales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #ECE9E6;
+    background: linear-gradient(to bottom, #FFFFFF, #ECE9E6);
+    color: #333; /* Color de texto predeterminado */
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #009688;
+    padding: 20px 0;
+}
+
+nav .logo {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a.active {
+    background-color: #fff;
+    color: #009688;
+}
+
+nav ul li a:hover {
+    background-color: #00796B;
+}
+
+/* Contenedor principal */
+.content-container {
+    display: flex; /* Utiliza flexbox para alinear los elementos en línea */
+    justify-content: space-between; /* Espacio entre los dos contenedores */
+    align-items: flex-start; /* Alineación vertical superior */
+}
+
+/* Estilos para el artículo existente */
+.article-container {
+    flex: 1; /* El artículo ocupará el espacio disponible */
+    margin-right: 20px; /* Espacio entre el artículo y el formulario */
+}
+
+#arone {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el formulario de contacto */
+.contact-form-container {
+    max-width: 2000px; /* Ancho máximo del formulario */
+    background: #fff;
+    padding: 60px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    float: left; /* Alinea el formulario a la izquierda */
+    margin-right: 20px; /* Espacio entre el formulario y el artículo */
+}
+
+.contact-form-container h2 {
+    font-size: 24px;
+    color: #009688;
+    margin-bottom: 20px;
+}
+
+.contact-form-container label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.contact-form-container input[type="text"],
+.contact-form-container input[type="email"],
+.contact-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 10px; /* Margen derecho para las cajas de texto */
+}
+
+.contact-form-container textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contact-form-container button[type="submit"] {
+    background-color: #009688;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.contact-form-container button[type="submit"]:hover {
+    background-color: #00796B;
+}
+
+/* Pie de página */
+#footerbg {
+    background: #00796B;
+    padding: 20px 0;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.btn-wsp{
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 63px;
+    bottom:25px;
+    right:25px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+}
+.btn-wsp:hover{
+    background: #20ba5a;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+    .btn-wsp{
+        width:63px;
+        height:63px;
+        line-height: 66px;
+	}
+}
+.btn-wsp:hover{
+    background: #20ba5a;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+    .btn-wsp{
+        width:63px;
+        height:63px;
+        line-height: 66px;
+	}}
+
+    .btn-goo{
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        line-height: 63px;
+        bottom: 25px; /* Cambia la posición vertical */
+        left: 25px; /* Cambia la posición horizontal */
+        background: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 35px;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+        z-index: 100;
+        transition: all 300ms ease;
+    }
+    
+    .btn-goo:hover {
+        background: #20ba5a;
+    }
+    
+    @media only screen and (min-width: 320px) and (max-width: 768px) {
+        .btn-wsp {
+            width: 63px;
+            height: 63px;
+            line-height: 66px;
+        }
+    }
+    .btn-wsp:hover{
+        background: #20ba5a;
+    }
+    @media only screen and (min-width:320px) and (max-width:768px){
+        .btn-wsp{
+            width:63px;
+            height:63px;
+            line-height: 66px;
+        }}
+    
+        .btn-goo{
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            line-height: 63px;
+            bottom: 25px; /* Cambia la posición vertical */
+            left: 25px; /* Cambia la posición horizontal */
+            background: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 35px;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+            z-index: 100;
+            transition: all 300ms ease;
+        }
+        
+        .btn-goo:hover {
+            background: #20ba5a;
+        }
+        
+        @media only screen and (min-width: 320px) and (max-width: 768px) {
+            .btn-wsp {
+                width: 63px;
+                height: 63px;
+                line-height: 66px;
+            }
+        }
+        
