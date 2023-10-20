@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopción de Mascotas</title>
+    <link rel="stylesheet" type="text/css" href="../css/adpcion.css">
+</head>
+<body>
+    <a href="https://wa.me/529651204084" class="btn-wsp" target="_blank">
+        <i class="fa fa-whatsapp icono"></i>
+    </a>
+    <header>
+        <h1>Tec BD: Adopción de Mascotas</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="adopcion.html" class="active">Adopción</a></li>
+            <li><a href="login.html">Inicio Sesion</a></li>
+        </ul>
+    </nav>
+
+    <section class="formulario">
+        <h2>Selecciona una categoría de mascota:</h2>
+        <form id="adopcion-form">
+            <select id="categoria" name="categoria">
+                <option value="perros">Perros</option>
+                <option value="gatos">Gatos</option>
+                <option value="otra">Otra</option> <!-- Agrega más categorías aquí -->
+            </select>
+        </form>
+    </section>
+
+    <section class="info-mascotas">
+        <h2>Mascotas disponibles para adoptar</h2>
+        <!-- Categoría de Perros -->
+        <div class="categoria perros">
+            <!-- Mascota 1 -->
+            <div class="mascota" id="perro1">
+                <a href="#perro1">
+                    <img src="../img/perro1.jpg" alt="Perro 1">
+                    <div class="info">
+                        <p>Nombre: Don Gojo</p>
+                        <p>Edad: 2 años</p>
+                        <p>Raza: xoloitzcuintle</p>
+                        <p>Descripción: Es un perro enérgico que le gusta pasear, amigable con los niños, es muy leal e inteligente.</p>
+                        <p>Cuidados : Solo necesita una cremas para el cuidado de su piel.</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Mascota 2 -->
+            <div class="mascota" id="perro2">
+                <a href="#perro2">
+                    <img src="../img/perro2.jpg" alt="Perro 2">
+                    <div class="info">
+                        <p>Nombre: Solo bino</p>
+                        <p>Edad: 3 años</p>
+                        <p>Raza: Criollo mexicano</p>
+                        <p>Descripción:Es un perro muy inteligente, leal que le gusta jugar con sus juguetes</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Agrega más mascotas de la categoría "Perros" aquí -->
+        </div>
+        
+        <!-- Categoría de Gatos -->
+        <div class="categoria gatos">
+            <!-- Mascota 3 -->
+            <div class="mascota" id="gato1">
+                <a href="#gato1">
+                    <img src="../img/gato1.jpg" alt="Gato 1">
+                    <div class="info">
+                        <p>Nombre: Gato 1</p>
+                        <p>Edad: 1 año</p>
+                        <p>Raza: Raza 3</p>
+                        <p>Descripción: Descripción del gato 1.</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Mascota 4 -->
+            <div class="mascota" id="gato2">
+                <a href="#gato2">
+                    <img src="../img/gato2.jpg" alt="Gato 2">
+                    <div class="info">
+                        <p>Nombre: Gato 2</p>
+                        <p>Edad: 2 años</p>
+                        <p>Raza: Raza 4</p>
+                        <p>Descripción: Descripción del gato 2.</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Agrega más mascotas de la categoría "Gatos" aquí -->
+        </div>
+
+        <!-- Categoría Otra -->
+        <div class="categoria otra">
+            <!-- Mascota 5 -->
+            <div class="mascota" id="otra">
+                <a href="#otra">
+                    <img src="../img/otra.jpg" alt="Otra Mascota">
+                    <div class="info">
+                        <p>Nombre: Poncho</p>
+                        <p>Edad: 6 meses</p>
+                        <p>Raza:Hamster comun</p>
+                        <p>Descripción: Es Hamster energético, le gusta comer y correr en su rueda.</p>
+                        <p>Cuidados : Le gusta saltar de lugares altos y se espanta con facilidad</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Agrega más mascotas de la categoría "Otra" aquí -->
+        </div>
+    </section>
+
+    <footer>
+        <p>Tec BD 2023. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const select = document.getElementById('categoria');
+        const categorias = document.querySelectorAll('.categoria');
+
+        select.addEventListener('change', (e) => {
+            const selectedCategoria = e.target.value;
+
+            categorias.forEach(categoria => {
+                if (categoria.classList.contains(selectedCategoria)) {
+                    categoria.style.display = 'block';
+                } else {
+                    categoria.style.display = 'none';
+                }
+            });
+        });
+    </script>
+     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+     <a href="https://maps.app.goo.gl/bbQ8RwDmTsjCJWd69" class="btn-goo" target="_blank">
+         <i class="fas fa-map-marker-alt icono"></i>
+ </a>
+</body>
+</html>

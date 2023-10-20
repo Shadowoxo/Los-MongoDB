@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="signupApp"> <!-- Declaramos la directiva ng-app para arrancar la aplicación -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Regístrarse</title>
+  <link rel="stylesheet" type="text/css" href="../css/signup.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script> <!-- Importamos el script angular.js -->
+  <script>
+    var signupApp = angular.module("signupApp", []); <!-- Creamos un módulo llamado signupApp -->
+    <!-- Registramos el controlador signupAppCtrl en el módulo signupApp -->
+    signupApp.controller("signupAppCtrl", function ($scope){
+
+      <!-- Vinculamos el arreglo users con el ámbito (Scope) de la aplicación -->
+      $scope.users = [
+        {nombre: '', email: '',contrasena: ''}
+      ];
+      <!-- Vinculamos la función enviar al Scope -->
+      $scope.enviar = function (user) {
+        $scope.users.push(angular.copy(user));
+        delete $scope.user;
+      };
+    });
+
+  </script>
+</head>
+<body ng-controller="signupAppCtrl"> <!-- Asociamos el controlador signupAppCtrl a la vista -->
+
+<div class="signup"> <!-- Definimos un div con clase signup -->
+
+  <form name="form" novalidate> <!-- Definimos un formulario y establecemos que AngularJS lo maneje -->
+  <h1>Regístrarse</h1><br> <!-- Definimos un título y damos un salto de línea -->
+  <div class="input"> <!-- Definimos un div con clase input -->
+    <input type="text" name="nombreField" placeholder="Nombre de usuario" ng-model="newuser.nombre" required> <!-- Vinculamos el objeto newuser con nombre al Scope de la aplicación -->
+    <span style="color: red" ng-show="form.nombreField.$dirty && form.nombreField.$invalid || form.nombreField.$touched && form.nombreField.$invalid">Ingrese el nombre de usuario</span> <!-- Verificamos si el campo fue modificado y si es inválido ó si el campo fue interactuado sin llenar de información y si es inválido, de ser así, mostramos un mensaje -->
+  </div><br>
+
+  <div class="input"> <!-- Definimos un div con clase input -->
+    <input type="email" name="emailField" placeholder="Correo electrónico" ng-model="newuser.email" required> <!-- Vinculamos el objeto newuser con email al Scope de la aplicación -->
+    <span style="color: red" ng-show="form.emailField.$dirty && form.emailField.$invalid || form.emailField.$touched && form.emailField.$invalid">Ingrese un correo electrónico</span> <!-- Verificamos si el campo fue modificado y si es inválido ó si el campo fue interactuado sin llenar de información y si es inválido, de ser así, mostramos un mensaje -->
+  </div><br>
+
+  <div class="input"> <!-- Definimos un div con clase input -->
+    <input type="password" name="pssField" placeholder="Contraseña" ng-model="newuser.contrasena" required> <!-- Vinculamos el objeto newuser con contraseña al Scope de la aplicación -->
+    <span style="color: red" ng-show="form.pssField.$dirty && form.pssField.$invalid || form.pssField.$touched && form.pssField.$invalid">Ingrese una contraseña</span> <!-- Verificamos si el campo fue modificado y si es inválido ó si el campo fue interactuado sin llenar de información y si es inválido, de ser así, mostramos un mensaje -->
+  </div><br>
+
+  <div class="input"> <!-- Definimos un div con clase input -->
+    <input type="password" name="rpssField" placeholder="Repetir contraseña">
+  </div><br>
+
+  <div class="input"> <!-- Definimos un div con clase input -->
+    <input type="submit" name="regbtn" value="Registrarse" id="btn" role="link" onclick="window.location='login.html'" ng-click="enviar(user)" ng-disabled="form.$invalid"> <!-- Vinculamos la función enviar con el evento de clic y establecemos que si los datos del form son inválidos que se inhabilite el botón -->
+  </div><br>
+
+  <div class="enlace"> <!-- Definimos un div con clase enlace -->
+    <a href="login.html">Tengo una cuenta</a>
+  </div>
+  </form>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

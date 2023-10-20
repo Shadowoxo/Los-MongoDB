@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="Info">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title ng-bind="titulo">equipo Villacorzo: Tu hogar para mascotas</title>
+    <meta name="description" content="Equipo Villacorzo es un centro de adopción de mascotas que ofrece a los animales un hogar amoroso y seguro.">
+    <link rel="stylesheet" type="text/css" href="../css/info.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script>
+        var inicioApp = angular.module("Inicio", []);
+
+        inicioApp.controller("InicioCtrl", function ($scope) {
+            $scope.titulo = "Equipo Villacorzo: Tu hogar para mascotas";
+        });
+    </script>
+</head>
+
+<body>
+    <a href="https://wa.me/529651204084" class="btn-wsp" target="_blank">
+        <i class="fa fa-whatsapp icono"></i>
+    </a>
+    <nav>
+        <a href="index.html" class="logo">Tec BD </a>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="info.html" class="active">¿Por qué adoptar?</a></li>
+            <li><a href="acerca.html">Acerca de</a></li>
+            <li><a href="adopcion.html">Adopción</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="login.html">Inicio Sesion</a></li>
+        </ul>
+    </nav>
+
+    <div class="articles">
+        <article id="arone">
+            <h1>Razones por las que vale la pena adoptar a un perro:</h1>
+
+            <h2><span>#1</span> Le das una oportunidad de vida</h2>
+            <img src="../img/numone.jpg" width="70%" id="im1">
+            <p id="arti">Cuando nacen, los canales auditivos y sus ojos están cerrados al mundo. Durante su primera semana dependen enteramente de sus madres. Durante la segunda semana comenzarán a abrir los ojos aunque su visión no será muy clara. En la tercera semana comenzarán a entender el mundo que los rodea y su sentido del olfato y audición mejorarán notoriamente.</p>
+
+            <h2><span>#2</span> Agradecimiento y vínculo afectivo con un perro adoptado</h2>
+            <img src="../img/numtwo.jpg" width="70%">
+            <p id="arti">A cambio, la recompensa que vas a obtener es infinita. Aunque algunos de los perros que han pasado por estos procesos pueden ser temerosos, su capacidad de agradecimiento, a medida que se acostumbren a tu familia o a ti, llenará de felicidad tu día a día, porque adoptar un perro contribuye a generar un vínculo de amor mutuo e incondicional.</p>
+
+            <h2><span>#3</span> Elegir perro de adopción</h2>
+            <img src="../img/numthree.jpg" width="70%">
+            <p id="arti">A diferencia de lo que mucha gente cree, en los refugios puedes encontrar perros de todas las edades y de múltiples razas. Además, tienes la ventaja de obtener información detallada acerca de sus características y temperamento, conocer su historia, acogerlos temporalmente, e incluso ir a pasearlos previamente antes de formalizar la adopción. Éstos son factores muy importantes para asegurarte de que escoges a tu compañero ideal.</p>
+
+            <h2><span>#4</span> Ayudas a otros perros en adopción</h2>
+            <img src="../img/numfour.jpg" width="70%">
+            <p id="arti">Al adoptar a un perro abandonado contribuyes a reducir el número de perros que viven en dichas entidades, y a mejorar las condiciones (recursos y fondos) de los que esperan que alguien los adopte.</p>
+
+            <h2><span>#5</span> Cuánto cuesta adoptar un perro</h2>
+            <img src="../img/numfive.jpg" width="70%">
+            <p id="arti">Los refugios manejan un donativo que es muy bajo en comparación con la compra. Éste varía de un refugio a otro. Los perros se entregan con su cartilla de vacunas al día, esterilizados y desparasitados. El donativo se justifica por los gastos veterinarios a cargo de la entidad, y es mayor en el caso de los cachorros debido al nivel de atención veterinaria que necesitan durante los primeros 6 meses de vida.</p>
+
+            <h2><span>#6</span> Pasos para adoptar un perro</h2>
+            <p id="arti">El proceso de adopción se realiza de forma controlada y profesional, varía de un lugar a otro y se lleva a cabo mediante un protocolo orientado a garantizar el bienestar del perro, así se asegura que no volverá a pasar por situaciones de calle o maltrato.
+            Entonces ¿por qué adoptar un perro? Definitivamente adoptar un perro es un acto de amor y es una gran oportunidad para adquirir una mascota con la cual podrás tener muchos momentos de felicidad. <span> ¡Anímate y adopta ya!</span></p>
+
+            <h3>¿Por qué adoptar?</h3><br><hr><br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Jv1iolzbvZg?si=SUh2qdhuq2RhMlli" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </article>
+        <aside class="aside">
+            <h2>¡Anímate a adoptar a tu amigo!</h2>
+            <hr><br>
+            <p>En Equipo Villacorzo nos aseguramos de contar con todos los recursos necesarios para que nuestras mascotas estén sanas y cómodas mientras buscan un nuevo hogar, ahora puedes reservar tu cita desde tu casa, solo da clic en el siguiente botón: </p>
+            <br>
+            <button id="btnReservar">Reservar</button>
+            <p>O visítanos en nuestro horario de trabajo:</p><br>
+            <table>
+                <tr class="column">
+                    <td class="cellbg"><b>Lunes</b></td>
+                    <td class="cellbg"><b>Martes</b></td>
+                    <td class="cellbg"><b>Miércoles</b></td>
+                    <td class="cellbg"><b>Jueves</b></td>
+                    <td class="cellbg"><b>Viernes</b></td>
+                </tr>
+                <tr class="fields">
+                    <td class="cellbgs">10:00 <br>a <br>14:40</td>
+                    <td class="cellbgs">8:00 <br>a <br>12:40</td>
+                    <td class="cellbgs">10:30 <br>a <br>16:00</td>
+                    <td class="cellbgs">10:30 <br>a <br>14:40</td>
+                    <td class="cellbgs">10:30 <br>a <br>16:00</td>
+                </tr>
+            </table>
+            <br>
+            <p>Verifica nuestros centros de atención en la siguiente liga:</p>
+            <br>
+        </aside>
+    </div>
+    <div id="footerbg">
+        <footer><p>Tec BD 2023. Todos los derechos reservados.</p></footer>
+    </div>
+</body>
+</html>

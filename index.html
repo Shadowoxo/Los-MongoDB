@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="Inicio">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title ng-bind="titulo">equipo Villacorzo: Tu hogar para mascotas</title>
+    <meta name="description" content="Equipo Villacorzo es un centro de adopción de mascotas que ofrece a los animales un hogar amoroso y seguro.">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script>
+        var inicioApp = angular.module("Inicio", []);
+
+        inicioApp.controller("InicioCtrl", function ($scope) {
+            $scope.titulo = "Equipo Villacorzo: Tu hogar para mascotas";
+        });
+    </script>
+
+    <!-- Código para evitar errores en la consola de JavaScript -->
+    <script>
+        (function() {
+            var method;
+            var noop = function () {};
+            var methods = [
+                'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
+                'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
+                'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
+                'timeline', 'timelineEnd', 'timeStamp', 'trace', 'warn'
+            ];
+            var length = methods.length;
+            var console = (window.console = window.console || {});
+
+            while (length--) {
+                method = methods[length];
+
+                // Only stub undefined methods.
+                if (!console[method]) {
+                    console[method] = noop;
+                }
+            }
+        })();
+    </script>
+</head>
+<body>
+    <a href="https://wa.me/529651204084" class="btn-wsp" target="_blank">
+        <i class="fa fa-whatsapp icono"></i>
+    </a>
+    <header>
+        <nav>
+            <a href="#" class="logo">Tec BD</a>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="info.html">¿Por qué adoptar?</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+                <li><a href="adopcion.html">Adopción</a>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="login.html">Inicio Sesión</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main ng-controller="InicioCtrl">
+        <section class="banner">
+            <div class="hero-text">
+                <h2>La vida es mejor con una mascota</h2>
+                <h1 ng-bind="titulo">Equipo Villacorzo: Tu hogar para mascotas</h1>
+            </div>
+            <img src="../img/banner.jpg" alt="Banner de Equipo" width="100%" height="100%">
+        </section>
+
+        <!-- Sección de contenido -->
+        <section class="contenido">
+            <h2>Bienvenidos a Equipo Villacorzo</h2>
+            <p>Somos un centro de adopción de mascotas comprometido con brindar un hogar amoroso y seguro para los animales necesitados. Nuestra misión es...</p>
+        </section>
+
+        <!-- Sección de galería de mascotas -->
+        <section class="galeria">
+            <h2>Conoce a nuestras mascotas disponibles</h2>
+            <!-- Agrega aquí imágenes y detalles de las mascotas disponibles para adopción -->
+        </section>
+
+        <!-- Sección de contacto -->
+        <section class="contacto">
+            <h2>Contacto</h2>
+            <p>Si deseas más información o estás interesado en adoptar una mascota, no dudes en ponerte en contacto con nosotros.</p>
+            <a href="contacto.html" class="btn-contacto">Contacta con nosotros</a>
+        </section>
+    </main>
+
+    <div id="footerbg">
+        <footer>
+            <p>Tec BD 2023. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+    <a href="https://maps.app.goo.gl/bbQ8RwDmTsjCJWd69" class="btn-goo" target="_blank">
+        <i class="fas fa-map-marker-alt icono"></i>
+    </a>
+</body>
+</html>
